@@ -1,0 +1,7 @@
+The internet is a bunch of connected devices (tablets, mobile devices, thermostats, computers, video game consoles). 
+
+Imagine two computers that want to communicate with each other. They use a cable at first. If six more computers want to be connected in that same room, many more wires are needed. 
+
+If billions of computers watned to be connected, this situation would be completely infeasible. As a result, the internet utilizes routing where there are physical devices who have teh job of connecting one computer to another.
+
+Individual machines are identified through IP (internet protocol) addresses.
