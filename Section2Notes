@@ -25,8 +25,19 @@ A web server is a computer that can satisfy requests on the internet, a client i
 Once a client sends a HTTP request to web servers, the server do not respond with the exact webpage. 
 They instead respond with HTML/CSS/JS etc. code that the client's web browser need to compile to build the webpage.
 
-When a user searches something on a web browser, the server decided which code to execute based on algorithms and whatnot and sends the HTML/CSS/JS code to the client.
+When a user searches something on a web browser (request), the server decided which code to execute based on algorithms (JS/Java/Python/Soldity) and whatnot and
+sends the HTML/CSS/JS code (client-side code) to the client.
 
 Front-end: what the user sees (HTML/CSS/JS).
-Back-end: the part of a computer system or application that is not directly accessed by the user, typically responsible for storing and manipulating data (JS/Java/Python/Soldity).
+Back-end: the part of a computer system or application that is not directly accessed by the user, typically responsible for
+storing and manipulating data (JS/Java/Python/Soldity/other server-side languages).
 
+HTML/CSS/JS are the three scripting languages that a browser understands. 
+Purple dino dances.
+The dino represents the HTML (the noun).
+'Purple' is represented by the CSS (the adjective/design).
+'Dances' is represented by JS (the action/functionality of elemtn on the webpage).
+
+HTML creates the elements of a web page (just the content, no functionality).
+CSS designs the elements of a web page.
+JS creates the functionality of a web page.
