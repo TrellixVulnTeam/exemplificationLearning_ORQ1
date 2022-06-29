@@ -1,0 +1,20 @@
+HTML is a markup language. There is no logic present in HTML. It's just about marking up a document. 
+It was built to indicate to web broswers what how text should be formatted.
+
+To write in HTML, we pick from a set of elements and tags to format text.
+
+Use MDN (Mozilla Documentation Network) for reference when struggling.
+
+Use <p></p> to group together elements in HTML.
+
+Use h1, h2, h3, h4, h5, and h6 to seperate content in your webpage. Make sure to only use one h1.
+
+HTML5 Boilerplate is an HTML, CSS and JavaScript template for creating HTML5 websites with cross-browser compatibility.
+
+<!DOCTYPE HTML> declares that the document is a HTML5 document.
+The <html></html> tag represents the root (high-level) content of an HTML document. One <head></head> element and one <body></body> are permitted inside this tag.
+The <head></head> tag represents back-end metadata which will never be exemplified to the end-user. Inside this element is the <title></title> element, which displays the title of the tab in a web browser.
+Typing "!" and tab will automatically create a boilerpplate in an HTML document.
+
+Numbered lists are called ordered lists (<ol></ol>) and bulleted lists are called unordered lists. (<ul></ul>)
+
