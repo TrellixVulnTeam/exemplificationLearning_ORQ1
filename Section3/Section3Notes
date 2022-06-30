@@ -17,4 +17,11 @@ The <head></head> tag represents back-end metadata which will never be exemplifi
 Typing "!" and tab will automatically create a boilerpplate in an HTML document.
 
 Numbered lists are called ordered lists (<ol></ol>) and bulleted lists are called unordered lists. (<ul></ul>)
+The <li></li> tag represents an itme in an HTML list.
 
+Use <a>, or the anchor tag to create hyperlinks. Attributes in HTML change the fucntionality of a tag.
+Use the 'href = ' to link web pages. Make sure to signify that you want a link to lead to an external website that utilizes the HTTP protocol by typing 'https://www.' before the desired URL.
+
+Use <img> to include an image in a webpage. Use the 'src = ' to signify the file location of your desired image. Use the 'alt = ' to signify the text that will replace the image if it cannot load.
+
+Comments in HTML start with <! -- and end with -->.
