@@ -1,0 +1,24 @@
+HTML 5 is the latest version of HTML. It includes new elements, attributes, and features. The <!DOCTYPE html> tag informs the web browser about what markup to expect.
+
+Block-level elements are stacked vertically. 
+Inline-level elements are stacked horizontally. They are on the same line as each other.
+
+Spans and divs are generic "container" elements. 
+Divs are block-level elements that group other lements together.
+Spans are inline-level elements that group other lements together.
+
+The <hr> tag creates a horizontal line in a webpage.
+
+The <br> tag creates a line break in text.
+
+The <sup> tag creates subscripted text.
+
+The <sub> tag creates subscripted text.
+
+HTML entities are different codes one can utilize tat will result in various character being printed. They all start with an ampersand and end with a semicolon.
+
+HTML semantics deals with code readability and with the meaning of each individual element. Optimized semantics improve accessibility.
+
+One can use <nav></nav>, <header></header>, <section></section>, and other tags to optimize HTML semantics.
+
+Emmet is a great add-on to VS code that tulizes keyboard shortcuts to enter code into the editor.
