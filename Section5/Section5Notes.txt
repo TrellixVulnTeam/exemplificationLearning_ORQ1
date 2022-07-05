@@ -1,0 +1,20 @@
+Tables are a clear way of displaying data is rows and columns.
+
+Only use the <table> element to display data.   
+
+The <td> element represents a cell of a table.
+
+The <tr> element represents a row of cells in a table.
+
+The <th> element represents headers of columns in a table.
+
+To outline the header, body, and footer of a table, wrap rows with the <thead>, <tbody>, and <tfoot> elements, respectively (onyl for semantics and accessibility).
+
+The 'rowspan' attribute allows you to define how many rows a <td> will take up.
+
+The 'colspan' attribute allows you to define how many columns a <td> will take up.
+
+The <form> element itself is a shell or container that doesn't have any visual impact. Make usre to fill the form with inputs, checkboxes, buttons, etc.
+It represents a document selection containing interactive controls for submitting information,
+The 'action' attribute specifies where the form data should be sent.
+The 'method' attribute specifies which HTTP method should be used.
