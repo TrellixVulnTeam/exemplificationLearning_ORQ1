@@ -1,0 +1,18 @@
+h2 {
+    color: indigo;
+    background-color: #fe213d;
+}
+
+button {
+    color: magenta;
+    background-color: rgb(70, 150, 150);
+}
+
+p {
+    color: red;
+    background-color: blanchedalmond;
+}
+
+body {
+    background-color: #000000;
+}

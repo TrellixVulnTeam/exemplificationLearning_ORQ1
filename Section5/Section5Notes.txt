@@ -18,3 +18,46 @@ The <form> element itself is a shell or container that doesn't have any visual i
 It represents a document selection containing interactive controls for submitting information,
 The 'action' attribute specifies where the form data should be sent.
 The 'method' attribute specifies which HTTP method should be used.
+
+The <input> element allows you to create a variety of different form controls. We have 20+ possible types of inputs, ranging from date pickers to checkboxes.
+The 'type' attribute alters the input type and appearance.
+
+The 'placeholder' attribute allows you to signify what exactly the user should input in a form (username, password, etc.)
+
+The <label> element allows you to define the text associated with (that labels) an input. Makes the label clickable, aligns it with the input. 
+Also used for accessibility. The 'for' attribute on a label and the 'id' attribute on an input should match to link them. 
+Only one element in a website should should use a distinct 'id' attribute.
+
+The <button> element allows you to create a button in HTML. 
+When a button is nested inside a <form> element, clicking it will redirect a user to the link defined in the 'action' attribute by default.
+Otherwise, button does nothing. The 'type' attribute of a <button> will alter its behavior when clicked.
+
+An <input> of 'type' "submit" will be a button that will submit a form (if it is nested inside a <form>). 
+Use the 'value' attribute to chnage the text present as part of (inside) the button.
+
+The 'name' attribute for <input> refers to the designation of the value inside the input when the data is submitted and sent to the server.
+An example of this is "q" when searching in a navbar.
+
+Type "checked" inside an <input> tag of 'type "checkboxes" to display it as checked when the page loads. Checkboxes only return a value of their 'name' attribute if they are checked (by default).
+
+One can only select one radio button in a group of them. To create a group of three radio buttons, create three <input>s with the same 'name' attribute. 
+Use the 'value' attributes for radio buttons to return the clicked value of the set.
+
+The <select> element allows you to create a dropdown menu of clickable options in HTML. Use nested <option> tags to insert options into the list. 
+The 'value' attribute also applies here to return the value of the selected option. Use the 'selected' attributed to select an item by default when loading in.
+
+An <input> of 'type' "range" will allow a user to pick a value from a slider with a min and max. Use the 'min', 'max', and 'step' attributes to control the respective attributes of the slider.
+
+You can only use the 'min', 'max', and 'step' attributes to modify an <input> of 'type' "number".
+
+The <textarea> element allows you to create a modifiable text box in which users can write in.
+You can use the 'rows' and 'cols' attributes to modify the min and max rows and columns (characters in a single row) of the text box. The default is two rows and twenty columns.
+The 'placeholder' attribute also applies here.
+
+One may want to validate certain inputs (on the browser's side) to confirm it meets up with certain standards (ex: password length) and is interoperable with server-side code.
+HTML5 has inbuilt functionalities for these kinds of actions. Use the 'required' attribute for <input>s to require a value to submit a form.
+Use the 'minlength' and 'maxlength' attributes to specify a minimum and maximum length of the input of a certain field.
+
+The 'pattern' attribute allows one to set regular expressions (minimums and maximum of certain types of characters in a field) with JS.
+Different input types have default 'pattern' attribute values, meaning they require certain types of inputs. 
+For example, 'email' required the field to have letters, then an atherate, then more letters, but doesn;t actually check if the email is real.

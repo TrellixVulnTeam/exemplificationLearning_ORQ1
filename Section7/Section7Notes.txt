@@ -1,0 +1,86 @@
+Use '*' to select everything in an HTML doc and apply certain properties to it.
+
+You can use a selector list to apply certain properties to multiple elements in CSS by seperating them with commas in the selector syntax.
+
+Use the 'id' attribute to single out a certain element in an HTML doc and style it a certain way. 
+Use a '#' preceding the id name in your CSS stylesheet or <style> element to signify that the selector is an id.
+
+Only one element on a page should use any given id.
+
+Use the 'class' attribute to signify that multiple elements in an HTML doc should be styled in a certain way.
+Use a '.' preceding the id name in your CSS stylesheet or <style> element to signify that the selector is an id.
+
+Use a descendant selector to signify that certain attributes should be applied to certain elements if they are nested inside another specified type of element.
+To implement this define multiple elements as a selector. If these are "li a", then the properties in the descendant selector will applies to all <a> inside an <li>.
+One can also combine 'class' and 'id' selectors with this. If one wants to make every paragraph red inside a ordered list with the 'class' attribute "tag", they can with a ".tag p" selector.
+
+Use an adjacent selector to select elements that are directly succeeding another on the same level. "h1 + p" = select paragraphs directly after an h1. (called a combinator)
+
+Use an direct child selector to select elements that are direct children of another. "div > p" = select paragraphs that are children of a div. (called a combinator)
+
+Attribute selectors select all input elements where the an attribute is set to a certain value. Use [] to specify the attribute and the value. 
+One can also use classes or ids in the attribute field in these selectors.
+One can also use certain specifications within the 'href' attribute to select elements.
+Note that there cannot be a space between the element and the brackets for this to work.    
+input[type="text"] {
+  width: 300px;
+  color: yellow;
+}
+
+Internal links, beginning with "#".
+a[href^="#"] {
+  background-color: gold;
+}
+
+Links with "example" anywhere in the URL.
+a[href*="example"] {
+  background-color: silver;
+}
+
+Links with "insensitive" anywhere in the URL, regardless of capitalization.
+a[href*="insensitive" i] {
+  color: cyan;
+}
+
+Links with "cAsE" anywhere in the URL, with matching capitalization.
+a[href*="cAsE" s] {
+  color: pink;
+}
+
+Links that end in ".org".
+a[href$=".org"] {
+  color: red;
+}
+
+ Links that start with "https" and end in ".org".
+a[href^="https"][href$=".org"] {
+  color: green;
+}
+
+Psuedo classes and keywords added to a selector that specifies a special state of the selected element(s). They use a single semicolon. 
+    :active: selected links while clicked
+    :checked: selects radio buttons/check boxes that are checked
+    :first
+    :first-child
+    :hover: selects elements when they are hovered.
+    :not()
+    :nth-child()
+    :nth-of-type(): selected every nth element of a certain type among a group of siblings.
+
+Psuedo elements are keywords added to a selector that lets you style a particular part of selected element(s). They use two semicolons.
+::after: inserts content after certani elements.
+::before
+::first-letter: selects the first letter of text in an element.
+::first-line: selects the first line of text in an element.
+::selection: selects elements when highlighted with a cursor.
+
+The order your styles are declared in matters. If they are both of the same specificity, the later one prevails. This also applies if multiple stylesheets are linked to a single HTML doc.
+
+Specificity is how the browser decides which rules to apply when multiple rules could apply to the same element. 
+It is a measure of how specific a given selector is. The more specific selector "wins". inline style > id selectors > class, attribute, pseudo-class, selector > element, pseudo-element selectors.
+
+'!important' makes a certain style override all other conflicts.
+
+CSS inheritance is the phenomenon of child elements inherits properties of their parents.
+
+

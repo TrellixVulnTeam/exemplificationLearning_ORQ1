@@ -1,0 +1,41 @@
+CSS stands for cascading style sheets. It's a language describing how documents are presented visually.
+
+selector {
+    property: value;
+}
+
+One can style elements by utilizing inline CSS tags with the 'style' attribute, or by nesting CSS tags in the <style> element, or by using <link> to link an external stylesheet.
+The 'href' attribute signifies the location of the deseried stylesheet, and the 'rel' attribute signifies the type of dcument one desired to lnk with <link>.
+
+Use the 'color' property to set the foreground color value of text or text in an element.
+
+Use the 'background-color' property to set the background color of an element.
+
+Any text elements are block-level - they extend horizontally across the page.
+
+Modern browsers accept 140 name colors. RGB (red green blue) can be added together to make any color. 
+For this reason, the RGB color model (with a max value of 255 per color) was created. The RGB color system is an additive system.
+A hexadecimal color represents an RGB combination in hexadecimal code (a base 16 decimal system). A hex code consists of six chars (three pairs that each represent a color in RGB). 
+ff in hex equals 255. 00 in hex equals 0.
+
+Make sure to use a semicolon at the end of each property declaration. 
+
+The 'text-align' property modifies the horizontal alignment of text inside an element.
+
+The 'width' property modifies the width of an element.
+
+Use the 'font-weight' property to set the weight or boldness of text in an element. One can use keywords (ex: light, normal, bold) or values (400 = normal, 700 = bold).
+If one attempts to use a font weight that cannot be found for a certain font, it will round to the nearest existing weight.
+
+Use the 'text-decoration' property to set the appearance of text in an element. One can set (colored/dotted/wavy) underlines, strikethroughs, or remove default text decoration properties.
+
+Use the 'line-height' property to set the distance between lines of texst in an element.
+
+Use the 'letter-spacing' property to set the distance between letters in text in an element.
+
+Use the 'font-size' property to set the font size of text in an element. 
+
+A pixel is an absolute unit. 1px does not always equal to width of one pixel.
+
+Use the 'font-family' property to chnage the font of text in an element. A font stack is a list of font that one would use on their websites ordered by priority. 
+If the first font isn't available on a user's machine in a stack, the second font will be used, and so on. The last font in a stack shold actually be a font family.

@@ -1,0 +1,77 @@
+h1 {
+    border: solid black 1px;
+    background-color: palegoldenrod;
+    display: inline;
+    line-height: 50%;
+}
+
+span {
+    border: solid black 1px;
+    background-color: aquamarine;
+    display: block;
+    padding: 50px;
+    margin: 50px;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olive;
+    border: solid black 5px;
+    display: inline-block;
+    margin: 50px;
+}
+
+section {
+    background-color: grey;
+    width: 800px;
+    height: 800px;
+}
+
+section div {
+    background-color: pink;
+    border: none;
+    width: 50%;
+    height: 50%;
+    margin: none;
+}
+
+article {
+    font-size: 10px;
+}
+
+#ems h2 {
+    font-size: 4em;
+    margin-left: 1em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 1em;
+}
+
+#ems button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+}
+
+#ems ul {
+    font-size: 1.2em;
+}
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 1rem;
+}

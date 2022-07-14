@@ -1,0 +1,50 @@
+The CSS box model is the idea that everything in CSS is a box, and thoes boxes have different properties, including color, background-color, margin, padding, and a border.
+
+The 'width' property sets the width of an element's content area.
+
+The 'height' property sets the height of an element's content area.
+
+The 'border-width' property sets the width border of an element.
+The 'border-color property sets the color of the border of an element.
+The 'border-style' property sets the deisgn of a border of an element. More than one value can be assigned to this property to define the border style of each side of an element.
+Use 'border-left-style', border-right-color', etc., to style a certain side of an element in a certain way.
+All three of these properties need to be assigned a value to exemplify a border.
+
+Borders always extend outwards from the elements they are set to. If the property 'box-sizing' is set to 'border-box', the border of the elements included in the defined selector juts inward, thereby subtracting from the content area of the elements.
+Use the 'border' shorthand property to provide the width, color, and style in one property (in no particular order).
+
+Use the 'border-radius' property to set the radius of the corners of an element (the larger, the radius, the more rounded the corners). One can use percentage units in this case as well as modify the borders of individual corners or corneres opposite to each other.
+
+Padding is the distance between the contant area of an element and the its border.
+Use the properties 'padding', 'padding-left', 'padding-right', etc., to set the padding of an element.
+The 'padding' property can have one, two, or four values assigned to it, representing all sides, vertical and horizontal padding, and each individual side, respectively.
+
+Margin is the space between the borders of two elements. 
+Use the properties 'margin', 'margin-left', 'margin-right', etc., to set the margin of an element.
+The 'margin' property can have one, two, or four values assigned to it, representing all sides, vertical and horizontal margin, and each individual side, respectively.
+
+<h1> elements have vertical margins by default.
+Elements in <body> also have a margin of 8px by default.''By default, nested elements cannot cross the border of their parents using the 'margin' property.
+
+The 'display' property allows one to control how elements are positioned repsective to others.
+Assign 'display' to "inline" to cause elements to become inline elements.
+Assign 'display' to "block" to cause elements to become block elements.
+
+If an element has "inline" set in the 'display' property field, then 'height' and 'width' are ignored, but 'padding' is respected but actually can overlap with other inline elements.
+Margin is respected horizontally.
+
+If an element has "block" set in the 'display' property field, then 'height', 'width', 'margin', and 'padding' are respected.
+
+If an element has "inline-block" set in the 'display' property field, then 'height', 'width', 'margin', and 'padding' are respected, but the element will behave like an inline element.
+
+If an element has "none" set in the 'display' property field, then the element will be hidden.
+
+In CSS units, percentages represent a size value relative to a parent or the inherent element utilizing the unit.
+
+In CSS units, percentages represent a size value relative to a parent. With the 'font-size' property, 1em equals the font size of the parent, 2em is twice that, and so on.
+
+With other properties, 1em equal is equal to the current computed font-size of the element itself or its parent (not the default).
+
+Rems, or root ems are relative to the root html element's size, or the default size of the root element.
+
+
