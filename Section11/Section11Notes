@@ -1,0 +1,35 @@
+In computer programming, a software framework is an abstraction in which software, 
+providing generic functionality, can be selectively changed by additional user-written code, thus providing application-specific software.
+
+Bootstrap imports pre-built components for utilization in our sites (such as a grid system).    
+
+Bootstrap is designed to save time for programmers when building responsive websites.
+
+Bootstrap allows programmers to rely on particular classes to build responsive elements of websites.
+
+A content delivery network, or content distribution network, is a geographically distributed network of proxy servers and their data centers. The goal is to provide high availability and performance by distributing the service spatially relative to end users.
+
+One should use a CDN to incoroprate Bootstrap into their websites for ease of access to many site-building features. 
+One can use the <link> tag and the subsequent 'href' attribute to add Bootstrap to their project. (this is a seperate <link> tab than the one to reference the CSS bas stylesheet)
+
+One should also use the <script> tag to tie in Bootstrap JS functionalities for one's project.
+
+Containers are the most basic layout element in Bootstrap and are required when using its default grid system. They are used to contain and pad content. These are imperative.
+
+Fluid containers span the width of the entire viewport.
+Resposive containers maintain a 100% width until their respective breakpoints (max-widths) are reached (the width of the container is more than the breakpoint).
+
+The parent class for <button> is '.btn'.
+
+Lots of components in Bootstrap have children name 'primary', 'secondary', 'danger', 'success', etc. to signify semantics.
+One can use Bootstrap classes on elements that differ from their use-case. ex: the '.btn' class can be utilized to style an <a> tag.
+
+The class stems '-sm', '-md', '-lg', etc. are used to specify the size of a styled element.
+
+There are lots of other subclasses of components with many functionalities in the Bootstrap ecosystem. 
+
+The '.display' classes are used to provide larger headings in a project.
+
+The'.lead' classes are used to differentiate paragraphs from their neighbors.
+
+The <blockquote> element in HTML and the '.blockquote' class in Bootstrap are used to emphasize text.
