@@ -1,0 +1,89 @@
+Arrays in JS are ordered collections of values that can contain more than one type of data. 
+
+Use 'let varName = [];' to create an empty array. Using the 'typeof' proprty on an array will return 'object'.
+
+The '.length' property applies to arrays. 
+
+Each element in an array in JS hasa corresponding index. 
+
+Use 'varName[n]' to access the n-1th item in array 'varName'. 
+
+If 'varName[n]' is used and n is greater than 'varName.length - 1', 'undefined' will be returned. 
+
+Use 'varName[n] = "bob"' to set the n-1th item in array 'varName'. This does not apply to distinct characters in strings. 
+
+If an item whose index is greater than 'varName.length - 1' is declared a value, the slots in between the previous most-right element and the new most-right element will be 'empty'.
+
+The '.push(value)' method can add one or more elements to the end of an array and returns a new array length.
+
+The '.pop(nothing/value)' method can remove an element from the end of an array and returns the array.
+
+The '.shift(nothing/value)' method removes the first element of an array and returns the removed element. 
+
+The '.unshift(value/values)' method can add one or more elements to the beginning of an array and returns a new array length.
+
+'let array3 = array1.concat(array2)' concatenates 'array1' anbd 'array2' and assigns the concatenated value to array3.
+
+The '.includes(value)' returns true if the array in question includes 'value' and false if not.
+
+The 'indexOf(value)' returns the index of the array in which 'value' exists and returns -1 if 'value' does not exist. 
+
+The '.reverse()' method reverses an array.
+
+The '.slice(index)' method returns the portion of an array starting from 'index'.
+
+The '.slice(startIndex, endIndex)' method returns the portion of an array starting from 'startIndex' and ending with 'endIndex'.
+
+The '.splice(startIndex, deleteCount, addItems) is used to remove, replace, and add items in the middle of an array. 
+
+ex:
+let mcc = ["red", "ginger", "yellow", "mint", "emerald", "teal", "cerulean", "sapphire", "purple", "pink"];
+mcc.splice(0, 1); // "red" is deleted, as it was in the '0' slot, and 1 item ("red") was deleted
+mcc.splice(0, 0, "red"); // "red" is inserted at the 0th index, 0 items were deleted. 
+mcc.splice(4, 1, "green"); // "green" is inserted at the 4th index, "emerald" is deleted. 
+
+The '.sort()' method sorts an array depending on each array's first character. 
+
+Arrays can only be equal to each other according to the '===' or '==' operators if the refer to the same object in memory, regardless of the contents. 
+
+When the keyowrd 'const' is applied to an array, the contents of the array can be modified as long as the referennce in memory does not change. 
+
+One can nest arrays others arrays to cerate multi-dimensional arrays. 
+
+ex:
+const gameBoard = [["X", "O", "X"], ["O", null, "X"], ["O", "O", "X"]];
+One can access 'null' with 'gameBoard[1][1];
+
+Objects are collections of properties, which in turn are key-value pairs composed with custom keys. Key are variable/field names, and values are the values assigned to the aforementioned. 
+
+ex:
+const fitBitData = {
+    totalSteps: 20432, totalMiles: 21.2, avgCaloriesBurned: 213, workoutsThisWeek: 5, qualityOfSleep: "Fair"
+};
+'fitBitData["totalSteps"]' returns the value of key 'totalSteps', or 20432.
+'fitBitData.totalSteps' also returns the value of key 'totalSteps', or 20432.
+
+All keys except symbols are converted to strings. 
+
+Modify objects as below:
+const midterms = {
+    danielle: 96;
+    thomas: 78;
+}
+midterms.thomas = "C+";
+midterms.josh = "A+";
+
+Combine the use cases of arrays and objects as below: 
+const comments = [
+    {
+        username: "bobxD69", 
+        text: "longo", 
+        votes: 9
+    }
+    {
+        username: "FishBoi", 
+        text: "FishBoi", 
+        votes: 71234
+    }
+]
+To access "FishBoi", use 'comments[1].text'

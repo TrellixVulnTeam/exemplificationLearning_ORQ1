@@ -1,0 +1,34 @@
+Loops allows us to repeat code a certain number of times (or even unlimited times) without needing to manually write the repeated code. 
+
+For-loops iterate a value and run a code block until a condition that involves the value is false. For this reason, certain forloops can run forever inadvertantly due to humna error.
+One can use for-loops in order to make many processes easier on a developer, such as iterating through an array or repeating multiple calculations until a condition is met. 
+
+For-loop syntax in JS:
+for (initialExpression; condition; incrementalExpression) {
+    code;
+}
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+} 
+
+One can also nest loops to provide broader and more complex functionalities is one's code.
+
+While loops continue runnign a single code block as long a single condition is true. 
+
+The 'break' keyword causes code to break out of a loop.
+
+For-of loops, or enhanced for loops are an enhanced way to iterate through arrays and other data structures. 
+
+For-of loop syntax in JS: 
+for (variable of iterable structure) {
+    statements;
+}
+
+For-in loops allow one to iterate through key-value pairs of objects.
+
+For-in loop syntax in JS: 
+for (key in non-iterable object) {
+    statement;
+}
+
+The 'Object.values(object in question)' method returns an array containing all the values of the key-value pairs in the object entered as an argument. 
