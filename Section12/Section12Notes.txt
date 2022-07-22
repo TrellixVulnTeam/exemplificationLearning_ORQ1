@@ -1,0 +1,113 @@
+In computer programming, a software framework is an abstraction in which software, 
+providing generic functionality, can be selectively changed by additional user-written code, thus providing application-specific software.
+
+Bootstrap imports pre-built components for utilization in our sites (such as a grid system).    
+
+Bootstrap is designed to save time for programmers when building responsive websites.
+
+Bootstrap allows programmers to rely on particular classes to build responsive elements of websites.
+
+A content delivery network, or content distribution network, is a geographically distributed network of proxy servers and their data centers. The goal is to provide high availability and performance by distributing the service spatially relative to end users.
+
+One should use a CDN to incoroprate Bootstrap into their websites for ease of access to many site-building features. 
+One can use the <link> tag and the subsequent 'href' attribute to add Bootstrap to their project. (this is a seperate <link> tab than the one to reference the CSS bas stylesheet)
+
+One should also use the <script> tag to tie in Bootstrap JS functionalities for one's project.
+
+Containers are the most basic layout element in Bootstrap and are required when using its default grid system. They are used to contain and pad content. These are imperative.
+
+Fluid containers span the width of the entire viewport.
+Resposive containers maintain a 100% width until their respective breakpoints (max-widths) are reached (the width of the container is more than the breakpoint).
+
+The parent class for <button> is '.btn'.
+
+Lots of components in Bootstrap have children name 'primary', 'secondary', 'danger', 'success', etc. to signify semantics.
+One can use Bootstrap classes on elements that differ from their use-case. ex: the '.btn' class can be utilized to style an <a> tag.
+
+The class stems '-sm', '-md', '-lg', etc. are used to specify the size of a styled element.
+
+There are lots of other subclasses of components with many functionalities in the Bootstrap ecosystem. 
+
+The '.display' classes are used to provide larger headings in a project.
+
+The'.lead' classes are used to differentiate paragraphs from their neighbors.
+
+The <blockquote> element in HTML and the '.blockquote' class in Bootstrap are used to emphasize text.
+Use <footer> and '.blockquote-footer' to provide a source for the <blockquote>. 
+
+The '.mb-0' removes bottom margin.
+
+Use the '.text-right' class to align text in an element to the right.
+
+Use the '.text-' class to change the colors, sizes, and other styles of different texts.
+
+Use the '.bg-' class to change the background colors, sizes, and other styles of different elements.
+
+Use '.badge' and '.badge-' classes to create badges in a project.
+
+The '.btn-group' class group groups buttons by wrapping them in a container or <div>.
+
+One can use this to make prettier dropdowns, radio buttons, and checkbox buttons.
+
+Use '.alert' and '.alert-' classes to create alerts in a project.
+
+One can use '.alert-heading' and <hr> to seperate content in an alert.
+
+'aria-' attributes affect the readability of elements to screenreaders.
+
+Use the '.close' to give a functionality to a button that will close an alert or other element. 
+
+Use the '.data-bs-dismiss' class to make an alert or other element dismissible.
+
+The grid system only works with a '.container' class.
+
+Use the '.row' class to divide rows of space in a grid into 12 sections. Each "piece" in a row will need to be assigned the '.col' (splits avaiable space)/'.col-{no. of units/breakpoints}' tag.
+'.col-{breakpoint}-{size}' be also be used for shorthand.
+'.col-md-6' means that two elements will be aligned side-by-side in a row until the medium breakpoint of pixels (or less) is hit, at which point they will stack vertically.
+'.col-md-6 col-md-3' means that four elements will have a width of 6 units until the medium breakpoint of pixels (or less) is hit, and if they are between the xl and md breakpoints, they have a width of 6 units. Above the xl breakpoint = 3 units each.
+
+the '.img-fluid' class ensures that an image will resize fluidly to adjust to the dimnesions of the page.
+
+The '.no-gutters' class removes gutters in a row.
+
+The breakpoints always refer to values above the breakpoint inherently. 
+
+Use the 'align-items-start', 'align-items-center', 'align-items-end', 'align-items-between' etc. to align vertically (across the cross axis) in Bootstrap.
+'align-self-' also works. Responsive variations also exist for these.
+
+Use the 'justify-content-start', 'justify-content-center', 'justify-content-end', 'justify-content-between' etc. to align horizontally (across the main axis) in Bootstrap.
+'justify-self-' also works. Responsive variations also exist for these.
+
+Use the '.border' class to insert a border in Bootstrap.
+
+'.form-group' is used to semantically group labels and inputs.  
+
+'.form-control' styles <input>s based on their type.
+
+For dropdown selection menus, use '.form-control' on the <select>.
+
+For checkbox inputs and radio buttons, use '.form-check' to format them instead of '.form-group'.
+
+'.navbar-light/dark' only change the color of the text of the navbar. One has to use the 'bg-' property to change the actual color.
+
+Use the 'active' and 'disabled' attributes to show which part of the website one is exploring and which parts are disabled.
+
+.navbar-brand for your company, product, or project name.
+.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).
+.navbar-toggler (for drawer buttons and spans to show the icon to the user) for use with our collapse plugin and other navigation toggling behaviors.
+Flex and spacing utilities for any form controls and actions.
+.navbar-text for adding vertically centered strings of text.
+.collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint.
+Add an optional .navbar-scroll to set a max-height and scroll expanded navbar content.
+
+The '.navbar-expand-{size}' class informs HTML when one wnats the navbar to expand fully and when it should collapse.
+
+Set 'data-toggle' to "collapse" to have it collapse in certain circumstances and the 'data-target' to the 'id' of the parent div containing all the navbar links.
+
+'.ml-auto' sets the left margin to "auto". 
+
+Use '.fixed-top', '.fixed-bottom', '.sticky-top', and '.sticky-bottom' to stick the navbar to certain points on the page.
+
+SVG stands for 'scalable vector graphics'. Icons included with bootstrap are all SVGs.
+
+Make sure to look up other Bootstrap utilities to further expand the arsenal of the functionality you can use in your code.

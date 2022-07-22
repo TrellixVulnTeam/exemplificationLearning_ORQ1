@@ -1,0 +1,24 @@
+body {
+    background-color: #7B886F;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+button {
+    background-color: #7B886F;
+    border: 1px solid #B4DC7F;
+    color: #B4DC7F;
+    padding: 30px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.25s;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    border: 1px solid #FEFFA5;
+    color: white;
+    box-shadow: 0px 0.5em 0.25em -0.4em #FEFFA5;
+}

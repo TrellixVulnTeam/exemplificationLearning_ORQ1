@@ -1,1 +1,30 @@
-The alpha channel determines the opacity of an element. The values assigned to this channel range from 0 to 1.
+The alpha channel determines the opacity of an element, but not its contents. The values assigned to this channel range from 0 to 1, except in the case of a hex code, in which one uses 00 to FF.
+
+The 'opacity' property determines the opacity of an element and its contents. The values assigned to this property range from 0 to 1.
+
+The 'position' property determines how an elements is positioned in a document. Elements are positioned as "static" by default. The 'top', 'right', 'left', and 'bottom' properties are ignored in this case.
+If "relative" is used, the element is positioned according to the normal flow of the document, but the 'top', 'right', 'left', and 'bottom' properties are respected in this case. The element is relative to its original position.
+If "absolute" is used, the element is removed from the normal document flow, and no space is created for the element. It is positioned relative to its closest positioned ancestor.
+If "fixed" is used, the element is removed from the normal document flow, and no space is created for the element. It is positioned relative to the edges of the screen.
+If "sticky" is used, the element is removed from the normal document flow, and no space is created for the element. It is is positioned based on the user's scroll position.
+
+Use the 'transition' property to set a transition between the morphing on CSS properties. The parameters are: property-name | duration | timing-function | delay.
+The "timing-function" parameter defines the acceleration of the transition within the duration of the function. The possible values include "ease-in", "ease-out", "cubic-bezier", and "ease-in-out".
+
+Use the 'transform' property to move elements and child elements. The "transform: rotate()" CSS function takes parameters as deg, grad, rad, and turns. Use "rotate3d()" to rotate an object in a 3d plane. 
+Use "scale()" and "scale3d()" to scale elements relative to their original size.
+Use "translate()" and "translate3d()" to translate elements relative to their original position.
+Use "skew()" to skew elements relative to their original position. Parameters accepted are X and Y deg, grad, rad, turns.
+
+Use the 'transform-origin' property to set the origin of various transformations.
+
+One can combine multiple transform properties in the same line by combining them by separating them by spaces.
+
+"margin: auto" allows one to center an element inside its parent.
+
+Use the 'background-image: url()' property to link a background image to an element.
+Use the 'background-size' property to set the dimensions of a background image. Values include "contain", "cover" , etc.
+Use the 'background-position' property to set the position of a background. 
+Use the 'background' position for shorthand for the aforementioned. (however, one must follow this syntax ---> bg-size/position)
+
+Make sure to put '' around imported fonts when defining the 'font-family' property. 

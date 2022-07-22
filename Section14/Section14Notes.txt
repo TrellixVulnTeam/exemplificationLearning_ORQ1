@@ -1,0 +1,83 @@
+JavaScript provides functionality to a website. It provides user-server interactions, animations, etc. 
+
+Primitive types in JS include 'number', 'string', 'boolean', 'null', 'undefined', 'symbol' and 'bigInt'.
+
+"REPL" stands for 'read, evaluate, print, loop.'
+
+Use the console in a web browser to run standalone JS.
+
+There is only one primitive type for floating and whole numbers in JS ('number').
+
+Math operations in JS are identical to the ones in Java.
+
+'//' creates a comment in JS. 
+
+'**' raises a number to its nth power.
+
+'NaN' is a muneric value that represents an object that is not a number.
+
+The 'typeof' operator only requires a single operand being passed to it. It returns the type of object that the operand is.
+
+'0/0' amounts to 'NaN'.
+
+Anytime one attempts to perform an operation has includes 'NaN' as an operand, 'NaN' is returned.
+
+'let year = 1985' sets the variable 'year' to 1985. Use the 'let' keyowrd to set a variable to a value.
+
+All variables in JS are value-type variables, not reference-type.
+
+'+=', '-=', '*'=, etc. and '--' and '++' act the same way in JS as they do in Java. 
+
+'const' (similiar to the 'final' keyword in Java) is an inbuilt JS fucntion that acts in the same fashion as let, exxcept it declares a constant, not a variable, meaning the declared value cannot be chnaged at a later point in one's code.
+
+'var' is an obselete function used to declare variables.
+
+Booleans are used to declare variables that only accept fields of type 'true' or type 'false'.
+
+Variables can dynamically change types in JS. 
+
+Variable names cannot include spaces in JS and cannot start with a digit. 
+
+Currently, camelCase is the most common naming convention in JS.
+
+The 'string' datatype contains textual information; it is a string of english characters.
+
+Make sure to use "" or '' to declare a string; make sure to remain consistent in the style of your string declaration quotation in a document.
+
+Strings can be empty in JS.
+
+Strings in JS are indexed in JS; this means that every character in a string has has a corresponding number associated with it (a positional number that iterates in order starting from 0, which is associated with the first character).
+
+Use 'stringName[0]' to access the first character of any string. 
+
+Use the '.length' property to access the total length of a string; there are no '()' after this property since it it not a method.
+
+One can concatenate strings by using the '+' operator.
+
+All methods in JS have the syntax 'variable.method(args/no args)'.
+
+Common string methods in JS include 'toLowerCase()', 'toUpperCase()', 'trim()' (cuts out any extra spaces at the end or beginning of a string).
+
+A parameter is a variable in a method definition. When a method is called, the arguments are the data you pass into the method's parameters.
+
+The '.indexOf(String arg)' returns the index of the first point in the string where the 'arg' is present. If 'arg' is not present in the string, -1 is returned.
+
+The slice(number x, number y / number x) method extracts a part of a string and returns the extracted part in a new string. 
+The parameters for 'slice()' are either just the beginning index (the method returns the characters in the string starting from the beginning index) or 
+the beginning and the end indices (the method returns the characters included in the range of the two args).
+
+If the either index is negative, the arg is treated as str.length + index. (str.slice(-3) returns str[str.length - 3] and onward).
+
+The '.replace(String regex, String replacement)' method returns a new string that replaces the first 'regex' in a string with the 'replacement' arg.\
+
+The '.repeat(number iterations)' returns a string that repeats the string it was invoked on 'iterations' times.
+
+Template literals are strings that allow embedded expressions to be evaluated and turned into a resulting string. One must use the ` character in the place of quotation marks for this.
+One also must encapsulate the embedded expressions with ${expression}. Expressions can be variables or actual mathematical operations. 
+
+'null' is the intentional absence of any value and msut be assigned to a variable.
+'undefined' is assigned to variables that do not have an assigned value (vars that haven't been initialized).
+
+The 'Math' object (this is very similar to Java; in Java, this is a class) contains properties and methods related to math.
+
+These include '.PI', '.E', '.sqrt(number arg)', '.sin(number arg)', '.floor(arg)' (rounds down), '.ceil(arg)' (rounds up), '.random() returns a random decimal number between 1 and 0.

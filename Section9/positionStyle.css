@@ -1,0 +1,41 @@
+#static {
+    border: solid black 3px;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    position: static;
+}
+
+#relative {
+    border: solid black 3px;
+    height: 200px;
+    width: 200px;
+    background-color: cadetblue;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+#absolute {
+    border: solid black 3px;
+    height: 200px;
+    width: 200px;
+    background-color: cadetblue;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#absolute {
+    border: solid black 3px;
+    height: 200px;
+    width: 200px;
+    background-color: cadetblue;
+    display: inline-block;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}

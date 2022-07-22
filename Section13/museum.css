@@ -1,0 +1,73 @@
+body {
+    background-color: #f5d9df;
+    font-family: 'Nunito', sans-serif;
+    margin-right: 0;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;   
+}
+
+#navBrand {
+    font-size: 1.5rem;
+    color: #ea1c2c;
+}
+
+#museumSeven {
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+.museumHeading {
+    font-size: 4rem;
+    font-weight: 200;
+    color: #ea1c2c;
+}
+
+.headImage {
+    display: flex;
+    justify-content: right;
+}
+
+.nav-link {
+    color: white;
+    opacity: 1;
+    transition: color 0.25s;
+}
+
+.nav-link:hover {
+    color:#ea1c2c;
+}
+
+.loremDesc {
+    color: #fe7f9c;
+    line-height: 2;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 1600px) {
+    #museumSeven {
+        font-size: 3.5rem;
+        font-weight: 200;
+    }
+}
+
+@media (max-width: 1400px) {
+    #museumSeven {
+        font-size: 3rem;
+        font-weight: 200;
+    }
+}
+
+@media (max-width: 1200px) {
+    .image {
+        order: 2;
+    }
+    .desc {
+        order: 1;
+        margin-top: 2%;
+        margin-bottom: 6%;
+    }
+}
+

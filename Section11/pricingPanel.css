@@ -1,0 +1,168 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: skyblue;
+    font-family: Open Sans;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: white;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.4);
+}
+
+.pricing-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid 0.1em rgba(0, 0, 0, 0.05);
+    max-width: 33%;
+}
+
+.pricing-plan:nth-of-type(3) {
+    border-right: none;
+}
+
+.pricing-img {
+    display: flex;
+    max-width: 60%;
+    min-height: 30%;
+}
+
+.pricing-header {
+    font-size: 1.25rem;
+    padding-top: 6.5%;
+    padding-bottom: 10%;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    color: grey;
+}
+
+.pricing-features {
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+    max-width: 60%;
+    font-weight: 700;
+    color: cornflowerblue;
+    line-height: 1.25;
+    font-size: 0.9rem;
+}
+
+.pricing-features-item {
+    border-top: rgba(135, 207, 235, 0.2) solid 0.1rem;  
+    padding: 5%;
+}
+
+.pricing-features-item:nth-of-type(2n) {
+    border-bottom: rgba(135, 207, 235, 0.2) solid 0.1rem;
+}
+
+.pricing-price {
+    padding: 5%;
+    font-weight: 700;
+    font-size: 2.5rem;    
+    color: cornflowerblue;
+}
+
+.pricing-button {
+    border-radius: 0.35rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 5%;
+    text-transform: uppercase;
+    width: 25%;
+    border: solid cornflowerblue 0.01rem;
+    margin: 5%;
+    color: cornflowerblue;
+}
+
+.is-featured {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .panel {
+        min-width: 50%;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        padding: 1.5rem 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.4);
+    }
+
+    .pricing-plan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        border-right: none;
+        border-bottom:  rgba(0, 0, 0, 0.05) solid 0.1rem;
+    }
+
+    .pricing-plan:nth-of-type(3) {
+        border-bottom: none;
+    }
+
+    img {
+        margin-top: 5%;
+    }
+}
+
+
+

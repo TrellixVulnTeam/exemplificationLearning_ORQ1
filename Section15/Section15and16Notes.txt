@@ -1,0 +1,51 @@
+The base comparators built into JS are '>', '<', '>=', '<=', '==', '!=', '===', and '!=='. They all return boolean values. 
+These can also return values when strings are used as operands (the return values are based on unicode), but other string methods should be used for those operations. 
+
+The '==' checks for equality of value, but not equality of type (coerces them to the same type; for this reason, it is a generic equality).
+
+5 == '5' is true.
+'b' == 'c' is false.
+0 == '' is true. 
+0 == false is true.
+null == undefined is true.
+
+The '===' checks for equality of value and equality of type (it is a strict equality).
+
+5 == '5' is false.
+'b' == 'c' is false.
+0 == '' is false. 
+0 == false is false.
+null == undefined is false.
+
+'console.log(any amount of args of any type separated by commas)' prints arguments to the console (prints args seperated by spaces).    
+
+'console.error' and 'console.warn' are self-explanatory. 
+
+The 'alert(message to user)' method displays a modal alert to a client at the top of a webpage.
+The 'prompt(message to user)' method prompts a user to enter a value as part of the aforementioned modal. 
+ex: let userInput = prompt("enter a number");
+
+To convert a string to a number, use the '.parseInt(string arg)' method.
+
+Use the <script> tag in your HTML doc to embed a JS doc. This tag should be placed at the bottom of the <body> tag.
+
+An 'if' statement only runs code in a block if a certain statement is true. 
+
+An 'else if' statement only runs code if the 'if' statement preceding it was false and its instrinsic condition is true.
+
+An 'else' if statement only runs code in its block if the 'if' and 'else if' statements preceding it were false.
+
+One can also nest conditionals inside other conditionals in JS. 
+
+In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context. All values are truthy unless they are defined as falsy. 
+That is, all values are truthy except false , 0 , -0 , 0n , "" , null , undefined , and NaN . JavaScript uses type coercion in Boolean contexts.
+
+The 'and' logical operator is '&&' in JS. If both conditions separated by the '||' are true, it will return 'true'.
+
+The 'or' logical operator is '||' in JS. If either condition separated by the '||' is true, it will return 'true'.
+
+The 'not' logical operator is '!' in JS. It takes truth to falsity and vice versa.
+
+The 'switch' statement is another control-flow statemnet in JS that can replace the 'if' and 'if-else' statement in JS. The syntax is identical to that of Java. 
+
+The 'break' keyword in JS causes code to break out of a loop/code block. 

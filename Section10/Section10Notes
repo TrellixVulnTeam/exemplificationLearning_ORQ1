@@ -1,0 +1,25 @@
+Flexbox is a 1D layout method for laying out items in rows or columns. It allows us to distribute dynamically across elements of an unknown size. 
+
+'display: flex' allows one to "enable" other flexbox properties for an element and its children. When one defines this property for any element, two main axes for the element are created: the main axis (left to right) and the cross axis (top to bottom). However, the 'flex-direction' property allows one to chnage the direction of the main axis (the default for this property is "row"). Parameters include "row", "row-reverse", "column", "column-reverse".
+
+Use the 'justify-content' to determine how elements are distributed across the main axis. The default is "flex-start", meaning that the content is justified toward the starting point of the main axis. Parameters include "flex-end", "flex-start", "center", "space-between", "space-around" etc.
+
+Use the 'flex-wrap' property to determine whether elements will wrap onto a new line or column. "wrap-reverse" makes elements in new columns or line travel against the flow of the cross axis (reverses the cross axis). "wrap" and "wrap-reverse" make sure that elements do not resize to fit in a space.
+
+Use the 'align-items' to determine how elements are distributed across the cross axis. Use the "baseline" parameter to align the element to content inside the element.
+
+Use the 'align-content' to distribute space for elements across the cross axis (only when elements are wrapped since then elements are actually traversing the cross axis).
+
+Use "align-self" change the cross axis alignment of a single element.
+
+'flex-grow': controls the amount of remaining space an element should take up.  Accepts a unit-less number value.
+
+'flex-shrink': if items are larger than the container, they shrink according to flex-shrink (unit is relative to other elements).
+
+'flex-basis': defines the initial size of an element before additional space is distributed (the defined dimension is dependent of the flex-direction).
+
+The 'flex' property is shorthand for the aforementioned properties. Parameters are in the aforementioned order.
+
+Responsivity is defined as how a wesbite behaves differently based on the interface it is being viewed on.
+
+Media queries allows one to modify styles based on the user interface being utilized. Use 'min-width', 'max-width', and 'and' to modify styles based on the width that the browser currently takes on.
