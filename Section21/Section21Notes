@@ -1,0 +1,47 @@
+Scope refers to where in the code one can access a certain field/function.
+The scope of a field declared in any code block is limited to the code block itself. These include functions, conditionals, loops, inner functions.
+
+Function expressions involve storing the return value of an immediately declared function inside a variable. These allow to assign a value to a variable when a function is run.
+ex: const square = function(num) {
+    return num**2;
+}
+square(7); // square === 49;
+
+Higher order functions involve functions which accept other functions as parameters and functions that inherently return another function.
+
+In JS, one can store a function in a variable. This inherently turns high order functions that return functions as useful, as one can make certain functions with certain parameters and functionality based on the parameters and qualities of the outer functions that create them.
+
+One can add functions as properties of objects. These are called methods.
+ex: const math = {
+    multiply: function(x, y) {
+        return x * y;
+    },
+    divide: function(x, y) {
+        return x / y;
+    },
+    square: function(x) {
+        return x * x;
+    }
+}
+
+OR 
+
+const math = {
+    multiply(x, y) {
+        return x * y;
+    },
+    divide(x, y) {
+        return x / y;
+    },
+    square(x) {
+        return x * x;
+    }
+}
+
+Every method is a function, but not every function is a method. 
+
+Use the 'this' keyword to access properties on the same object. 'this' depends on the invocation context of the function it is used in as well. If 'this' is used outside the object, its invocation is outside the object and the 'this' keyword cannot find a property to work with because it is not present inside an object and thus cannot access a property. 
+
+The 'Window' object is a built-in wrapper object in JS that everything is present inside of. 
+
+If an error is generated as a result of code inside a 'try' code block, then the code inside the subsequent 'catch' block will run instead. 
