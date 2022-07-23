@@ -1,0 +1,4 @@
+The .'forEach(func)' array method executes 'func' once for each element of an array. Each element of the array calling the method is cycled through. 
+
+The '.map(func)' array method executes 'func' once for each element of an array and a new array is created that stored  each of the return values of the function for each element of the original array.
+Each element of the array calling the method is cycled through.

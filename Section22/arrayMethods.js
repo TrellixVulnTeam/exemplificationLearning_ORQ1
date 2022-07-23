@@ -4,4 +4,12 @@ function print(element) {
     console.log(element);
 }
 
-numbers.forEach
+numbers.forEach(print);
+
+numbers.forEach(function (el) {
+    console.log(el); 
+});
+
+const numbersx2 = numbers.map(function (num) {
+    return num * 2;
+});
