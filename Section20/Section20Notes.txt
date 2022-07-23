@@ -1,0 +1,11 @@
+Functions are reusable procedures which allow for a reduction in the duplication of code on a high-level basis. One has to actually define (write) a function before running in a program.
+
+Function syntax in JS: 
+function funcName(args, args) {
+    statements; 
+}
+
+Arguments in JS are inputs to a function. 
+
+The code immediately following the 'return' keyword is returned by the function; it is the output of the function. 
+The 'return' keyword also terminates function execution. 
