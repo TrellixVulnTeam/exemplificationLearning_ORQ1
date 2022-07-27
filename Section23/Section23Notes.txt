@@ -1,0 +1,62 @@
+Make sure to assign default values for parameters in the signature of a function.
+
+ex: function multiply(a, b = 1) {
+    return a * b; // b is set to 1 by default. 
+}
+
+Use the spread syntax to spread out an iterable (such as an array) into different arguments.
+
+ex: const nums = [1, 2, 3, 4, 52];
+Math.max(nums) doesn't work because it is only one argument of type 'array', and multiple arguments of type 'number' were expected.
+Math.max(...nums) spreads out the array into different arguments that the function can process. 
+
+const cats = ['Blue', 'Scout', 'Rocket'];
+const dogs = ['Rusty', 'Wyatt'];
+const allPets = [...dogs, ...cats];
+
+const felines = {legs: 4, family: 'Felidae'};
+const canines = {legs: 4, furry: true};
+const dog = {...canine, isPet: true};
+const lion = {...feline, genus: 'Panthera'};
+
+The arguments object is an array-like object available to access inside every function (it has a '.length' property) containing all the arguments apssed to the function. (not available inside arrow functions)
+
+The rest operator collects the rest of the arguments  arguments into an actual array.
+
+ex: function sumAll(...nums) {
+    let toal = 0;
+    for (let n of nums) {
+        total += n;
+    }
+    return total;
+}
+
+Destructure arrays to extract elements from them.
+
+ex: let scores = [1, 2, 3, 4, 5];
+const [gold, silver, ...everyoneElse] = scores; // const gold = scores[0], const silver = scores[1], const everyoneElse = scores[2 - 4];
+
+Destructure objects to extract properties from them.
+
+const user = {
+    email: 'harvey@gmail.com',
+    password: 'sCoTt1948sMiTh',
+    firstName: 'Harvey',
+    lastName: 'Milk',
+    born: 1930,
+    died: 1978,
+    bio: 'Harvey Bernard Milk was an American politician and the first openly gay elected official in the history of California, where he was elected to the San Francisco Board of Supervisors',
+    city: 'San Francisco',
+    state: 'California'
+}
+
+const {email} = user; // const email = user.email;
+const {email: userEmail}; // const userEmail = user.email;
+const {born, age = "48"}; // const born = user.born, const age = 48; (this only works if no value is attached to the variable through a colon)
+
+Destructure parameters/arguments passed to a function to extract properties from them.
+
+ex: function fullName(user) {
+    const {firstName, lastName} = user;
+    return firstName + " " + lastName;
+}
