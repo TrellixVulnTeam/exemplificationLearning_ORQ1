@@ -2,3 +2,47 @@ The .'forEach(func)' array method executes 'func' once for each element of an ar
 
 The '.map(func)' array method executes 'func' once for each element of an array and a new array is created that stored  each of the return values of the function for each element of the original array.
 Each element of the array calling the method is cycled through.
+
+Arrow functions are a syntactically compact alternative to regular function expressions. One should use these when defining functions that only exist inside other functions and for very basic functions.
+They should also be used for almost all function expressions (functions without a name that cannot exist and be executed on their own).
+
+ex: numbers.map((num) => {
+    return num * 3;
+});
+
+This function cannot exist on its own, as it does not have a name and cannot be run for that very reason. 
+
+However, if a variable (with a name, of course) is assigned the value of an arrow function than the inherent function can be called and run with the function name.
+
+ex: const numbersx3 = (num) => {
+    return num * 3;
+});
+numbersx3(3); // returns 9.
+
+Arrow functions also allow one to implicitly return values. 
+
+ex: const rollDie = () => (
+    Math.random() * 6 + 1; // will return the value calculated inside the parenthesis.
+)
+
+ex: const rollDie = () => Math.random() * 6 + 1; // will return the value calculated.
+
+Use the 'setTimeout(func, delay in ms)' method to set a delay on the execution of a function. 
+
+Use the 'setInterval(func, delay in ms)' method to execute a function at set intervals. 
+
+Obviously, one can assign a value to a variable periodically with the 'setInterval' method.
+
+The 'clearInterval(id of a 'setInterval' method)' will cause the corresponding 'setInterval' method to stop infinitely executing its inherent function. 
+
+The '.filter(func that returns a boolean value)' method is applied to an array and creates and returns a new array that only contains elements of the array that 
+meet conditions defined by the function (that can be input as arguments and will cause 'func' to return true). 
+
+The '.every(func that returns a boolean value)' method is applied to an array and returns true if every element in the signified array meets a condition defined by the function.
+
+The '.some(func that returns a boolean value)' method is applied to an array and returns true if any element in the signified array meets a condition defined by the function.
+
+The '.reduce(accumulator, currentValue)' method is used to execute a reducer function on each element of the array to result in a single value being returned.
+
+Arrow functions don't have their own bindings to 'this.', as they access the properties that are supposed to accessed by 'this.' upon function creation ('this.' access depends on scope in which the arrow function is created in),
+not function execution, causing only their own scope to be visible to them.
