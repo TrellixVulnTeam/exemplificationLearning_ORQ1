@@ -1,0 +1,35 @@
+The DOM is a JS representation of a webpage. It's one's JS window into the contents of a webpage. It's a bunch of objects that allow you and users to interact with webdev elements. 
+It stands for document object model. HTML/CSS are input to create JS objects.
+
+The 'document' object is an "entry point" into the world of DOM and containing representations of all the content on a page and other usefuls methods and properties.
+'document.all' contains every single element on a page in an array. Every element, tag, attribute, and CSS property is an object. 
+
+The 'Document' method '.getElementById(string id)' returns an 'Element' object representing the element whose 'id' property matches the specified string. 
+.'getElementsByTagName()' and '.getElementsByClassName()' have similar functionalities, but they return live HTMLCollections (array-like objects) that constantly update and contain 'Element' objects.
+
+The 'Document' method 'querySelector(string CSS selector)' returns an 'Element' object of the first element which can by selected with the signified selector. 
+One can select with psuedo elements, psuedo classes, elements, tags, attributes, classes, id, etc.
+
+The 'Document' method 'querySelectorAll(string CSS selector)' returns a 'HTMLCollection' object of 'Element' objects of the elements which can by selected with the signified selector. 
+
+The '.innerText' property represents the displayed textual information contained in a JS document. 
+
+The '.textContent' property represents the textual information contained in a JS document with line breaks as determined by the code editor and every element present inside the text, no matter its properties. 
+
+The 'Element' property 'innerHTML' gets or sets the HTML or XML markup contained within the element. This means one can change HTML tag markup with JS with this property.
+
+One can edit the attributes of an element by using the '.[attribute]' syntax.
+
+Use the '.getAttribute('[attribute]') method to get an attribute from an element. One can also use the '.attribute' syntax, but it might return a different value based on the attribute at hand. 
+
+Use the 'style' property for 'Element' to access styles of an object defined in line (through '.') and change (overrides the stylesheet) the styles of an object. (properties are in camelCase strings, hyphens do not apply). This writes in in-line styles in the HTML doc through JS.
+
+ex: const h1 = document.querySelector('h1');
+h1.style.fontSize = "3em";
+
+Use the 'window.getComputedStyle(Element).CSSproperty' method to access all CSS properties of a certain element. However, one cannot set styles with this method as a result of it being a 'get' method.
+
+Use the 'Element.setAttribute(attribute, value)' method to set an attribute of an element.
+
+Use the '.classList' property to return an array-like object called 'DOMTokenList'.
+Use the '.classList.add()' method to add a class to the list of classes already instantiated on an object
