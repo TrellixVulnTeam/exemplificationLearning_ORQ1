@@ -6,3 +6,22 @@ One can use JS functions to set the value of the this property.
 Use the '.addEventListener(event, function)' method to add an event listener and reaction to the defined event in JS. 
 
 One can use the 'this' keyowrd with event listeners to create a universal event listeners that does not discriminate on the type of name of the object. 
+
+If one includes the event as a parameter in the executable function in an event listener and prints out the event, the properties of the event will be printed out. (the function parameters are passed in for you and any parameter not in memory already will be listed as the inherent event)
+
+Use the 'keydown' event to check when any key is pressed.
+Use the 'keyup' event to check when any key is released.
+Use the 'submit' event to check when a form is submitted.
+
+When one submits a form with an action attribute attached to it, the user is taken to a different page. If there is no action attribute, the page is reloaded by default. 
+Use 'event.preventDefault()' to prevent the default behavior of forms following submissions. 
+
+Use the 'value' attribute to access the value entered in inputs. 
+
+use 'form.elements.nameOfInput' to quickly access an input in a form. 
+
+Use the 'change' event to detect change in the value of an input.
+
+use the 'event.stopPropagation' to prevent an event from bubbling up to its parents.
+
+Use 'event.target' to delegate event listeners to added elements. 
