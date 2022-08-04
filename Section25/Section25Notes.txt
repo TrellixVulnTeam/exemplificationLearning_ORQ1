@@ -1,0 +1,6 @@
+DOM events are defined as "responding to user interaction" with certain code.
+
+The 'onclick' property allows one to run JS code defined as a part of the equality in HTML, CSS, or JS.
+One can use JS functions to set the value of the this property.
+
+Use the '.addEventListener(event, function)' method to add an event listener and reaction to the defined event in JS. 
