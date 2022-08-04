@@ -32,4 +32,26 @@ Use the 'window.getComputedStyle(Element).CSSproperty' method to access all CSS 
 Use the 'Element.setAttribute(attribute, value)' method to set an attribute of an element.
 
 Use the '.classList' property to return an array-like object called 'DOMTokenList'.
-Use the '.classList.add()' method to add a class to the list of classes already instantiated on an object
+Use the '.classList.add()' method to add a class to the list of classes already instantiated on an object ('.classList.remove()' removes a class, '.classList.contains()' checks if a classList contains a class within it, '.classList.toggle()' toggles if a class is applying to an object or not). 
+
+Use the '.parentElement' property to access the direct parent of an element.
+Use the '.children' property to access the direct children of an element returned in an HTMLCollection'
+Use the '.nextSibling' and '.previousSibling' properties to access the next sibling Node of an Element.
+Use the '.nextElementSibling' and '.previousElementSibling' properties to access the next sibling Element of an Element.
+
+Use the 'document.createElement('tagName')' method to create a new Element object.
+
+Use the 'document.Element.appendChild('childName')' method to append a child to an element.
+Use the 'document.Element.prependChild('childName')' method to prepend a child to an element.
+
+Use the 'document.Element.append()' to append an Element or text to another Element.
+Use the 'document.Element.prepend()' to prepend an Element or text to another Element.
+
+Use the 'document.Element.insertAdjacentElement(position, element)' to insert a sibling relative to an element. 
+Positions: 'beforeBegin': before the element, 'afterBegin': inside the element before its first child', 'beforeEnd': inside the element after its last child, 'afterEnd': after the element.
+
+Use the 'childNode.after(Element)' to insert a node directly after another one.
+Use the 'childNode.before(Element)' to insert a node directly before another one.
+
+Use the 'Node.removeChild(Element)' to remove a child from an element.
+Use the 'Node.remove(Element)' to remove an element.
