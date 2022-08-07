@@ -24,3 +24,5 @@ XHR or XMLHttpRequest is the original method of sending JS requests.
 
 The Fetch API is a newer version of making HTTP requests via JS; it also supports Promises. fetch() returns a Promise, which, when resolved, returns a ReadableStream.
 fetch().json() also returns a Promise, which returns JSO when resolved. 
+
+Axios is a library for making HTTP requests. It parses JSON automatically and set headers using the .get() method. 
