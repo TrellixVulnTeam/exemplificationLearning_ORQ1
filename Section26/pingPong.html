@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
     <div>
@@ -12,9 +13,20 @@
             Ping Pong Score Keeper 
         </div>
         <div>
-            <h2>0 to 0</h2>
-            <p>Use the</p>
+            <h2 id = "score">0 to 0</h2>
+            <p>Use the buttons below to keep score.</p>
+            <p><b>Playing To</b>
+            <select name="maxScore" id="score">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select></p>
         </div>
+        <button id = "plusPOne">+1 Player One</button>
+        <button id = "plusPTwo">+1 Player Two</button>
+        <button id = "reset">Reset</button>
     </div>
     <script src="pingPong.js"></script>
 </body>
