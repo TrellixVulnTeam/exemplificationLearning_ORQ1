@@ -33,5 +33,5 @@ async functions always return a Promise.
 If a function returns a value, that value is a resolved Promise
 If a function returns an error, that value is a rejected Promise.
 
-One mainly usse the await keyword inside async functions; it will pause the execution of a function, waiting for a Pormise to be resolved. 
+One mainly uses the await keyword inside async functions; it will pause the execution of a function, waiting for a Pormise to be resolved. 
 Use try and catch to handle await-async functions.

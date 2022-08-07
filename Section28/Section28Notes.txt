@@ -1,0 +1,26 @@
+AJAX stands for Async JS And XML. It refers to making requests to a server while a page is already loaded. 
+
+API stands for Application Programming Interface; defines interactions between softwares. Most APIs are Web APIs; these are liek portals into a different application, database, or dataset. 
+
+Web APIs are interfaces occurring over the HTTP protocol, request-response system of endpoints.  
+
+JSON is the format in which most Web APIs respond to requests. This stands of JS Object Notation. Every key and value in a JSON object is a string, except if a value is a number
+
+One can use JSON.parse() and JSON.stringify() to convert JSON to JS object and vice versa, respectively.
+
+Postmand and Hoppscotch are tools used to call HTTP requests, test out APIs, and save requests.     
+
+The primary or most-commonly-used HTTP verbs (or methods, as they are properly called) are POST, GET, PUT, PATCH, and DELETE. 
+These correspond to create, read, update, and delete (or CRUD) operations, respectively. There are a number of other verbs, too, but are utilized less frequently.
+
+HTTP status responses include 1** (information responses), 2** (successful responses), 3** (redirection messages), 4** (client-side error), 5** (server-side error).
+
+One can append query strings to URLs to assign values to certain parameters. A query string always starts with a question mark and key-value paris are separated by ampersands. 
+Query strings are ignored by APIs unless hard-coded in. 
+
+HTTP headers let the client and the server pass additional information with an HTTP request or response.
+
+XHR or XMLHttpRequest is the original method of sending JS requests.
+
+The Fetch API is a newer version of making HTTP requests via JS; it also supports Promises. fetch() returns a Promise, which, when resolved, returns a ReadableStream.
+fetch().json() also returns a Promise, which returns JSO when resolved. 
