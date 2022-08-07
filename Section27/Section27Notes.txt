@@ -1,0 +1,37 @@
+The call stack is the mechanism the JS interpreter uses to keep track of its place in a script that calls multiple functions. 
+This is how JS knows what function is currently being run and what functions are called from witihn that function, etc. 
+
+A stack is a data structure is which the only functiosn are push last and pop first. 
+
+When a function is about to be run it is added to the top of the stack. When a function has been run and it has provided a sufficient value to that its outer function can process, it is removed from the stack. 
+
+JS is single-threaded, meaning it can only run a single line of code at a time. The single thread can only run one line of code. 
+
+If there is a delay in running a certain line of code (calling somethign from a database, setTimeout() method), then the browser runs other code in the background becuase it is multi-threaded (it comes with web-APIs that can handle background tasks).
+
+The JS call stack recognizes these API functions and passes them off to the browser to take care of. Once the browser finishes the background tasks, they are psuhed onto the stack as a callback.
+
+A callback is a function passed as an argument to another function.
+
+Use nested setTimeout() method to create multiple delayed functions conseuctively. One can also write a generic funciton for htis functionality. 
+
+A Promise is an object representing the eventual completion or failure of an asynchronous operation. 
+
+Asynchronous code allows the program to be executed immediately where the synchronous code will block further execution of the remaining code until it finishes the current one.
+
+A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. 
+This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
+
+Use the Promise.then() method to run code if a Promise is fulfilled or resolved.
+Use the Promise.catch() method to run code if a Promise is fulfilled or resolved.
+
+Make sure to return Promises to avoid excessive nesting of Promises and to use a single .catch() for all "nested" .then(). 
+
+The whole point of a Promise is to a) avoid excessive nesting b) streamline error handling c) streamline the handling of waiting for data .
+
+async functions always return a Promise. 
+If a function returns a value, that value is a resolved Promise
+If a function returns an error, that value is a rejected Promise.
+
+One mainly usse the await keyword inside async functions; it will pause the execution of a function, waiting for a Pormise to be resolved. 
+Use try and catch to handle await-async functions.
