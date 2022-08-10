@@ -14,3 +14,6 @@ Use the new keyword to create a new instance of a type of object.
 One can use factory functions to create objects with properties and methods (that use its assigned properties) pertaining to itself; these are not nearly as streamlined as constructors.
 
 One can also use JS classes to create objects and constructors within them to help create instances of those objects. 
+
+One can create contsuctors with contstructor() (this will be the first function to execute inside a class, it creates the object and assigns values to its properties and methods) or function Object().
+
