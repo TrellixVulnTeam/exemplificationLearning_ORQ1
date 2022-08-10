@@ -17,3 +17,4 @@ One can also use JS classes to create objects and constructors within them to he
 
 One can create contsuctors with contstructor() (this will be the first function to execute inside a class, it creates the object and assigns values to its properties and methods) or function Object().
 
+the extends and super keywords also exist in JS for inheritance of objects. 
