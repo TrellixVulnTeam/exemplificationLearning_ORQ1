@@ -5,6 +5,12 @@ The __proto__ property is a reference to an object's prototype object.
 __proto__ is the actual object that is used in the lookup chain to resolve methods, etc. prototype is the object that is used to build __proto__ 
 when you create an object with new.
 
-prototype is not available on the instances themselves (or other objects), but only on the constructor functions, but __proto__ is available everywhere.
+prototype is not available on the instances themselves.
 
 prototype stores the prototype's methods and objects; it is a getter and setter method.
+
+Use the new keyword to create a new instance of a type of object. 
+
+One can use factory functions to create objects with properties and methods (that use its assigned properties) pertaining to itself; these are not nearly as streamlined as constructors.
+
+One can also use JS classes to create objects and constructors within them to help create instances of those objects. 
