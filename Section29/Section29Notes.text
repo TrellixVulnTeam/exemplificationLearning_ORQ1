@@ -1,0 +1,10 @@
+Object prototypes are the mechanism by which JS objects inherit features from another. 
+
+The __proto__ property is a reference to an object's prototype object. 
+
+__proto__ is the actual object that is used in the lookup chain to resolve methods, etc. prototype is the object that is used to build __proto__ 
+when you create an object with new.
+
+prototype is not available on the instances themselves (or other objects), but only on the constructor functions, but __proto__ is available everywhere.
+
+prototype stores the prototype's methods and objects; it is a getter and setter method.
