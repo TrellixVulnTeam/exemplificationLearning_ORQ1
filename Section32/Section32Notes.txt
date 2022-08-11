@@ -12,4 +12,6 @@ use the '-g' flag to install a package globally.
 
 'package.json' is a file present in every node package containing metadata about the project (dependencies, autors, licenses, etc.).
 
-Use 'npm init' to create a 'package.json'
+Use 'npm init' to create a 'package.json'.
+
+If one delcares the command 'npm install' when the directory containing a 'package.json file' is selected, all specified dependencies will be installed.
