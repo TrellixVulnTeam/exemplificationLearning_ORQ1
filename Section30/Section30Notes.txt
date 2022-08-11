@@ -1,0 +1,19 @@
+The client terminal takes some getting used to, but it has the potential to be MUCH more efficient than using a GUI. It provides access to areas of our computer that we normally cannot interact with. 
+Many webdev tools are utilized and instelled via the command line. 
+
+A terminal is a text-based interface to a computer. The shell is the software running on the terminal. Bash is one of the most popular shells (this is the default used on any Mac).
+
+Use 'ls' to display the contents of one's user folder (stands for list). Use 'pwd' (stands for print working directory) toprint a path to the current working directory (the one you are currently navigating).
+Use 'cd' to move between folders (laterally or into a sub-branch). Use 'cd..' to move into a super-branch.
+
+A relative path to a file is textually relative to the file/folder that the termial is currently navigating, and absolute path is a path textually containing every super-branch one needs to traverse from the base folder (hard-drive) of the computer to get to the desired location. 
+
+Use 'cd../..' to traverse a super-super-branch of the current directory one is traversing. Use 'cd ~' to start traversing the "home" directory. 
+
+Use 'mkdir' to create a new directory (separate directory name with spaces to create multiple directories).
+
+Use 'man' to display the documentation of your terminal. Use '[command] -[flagGlyph]' to change the qualities and return values of a command in various different fashions. 
+
+Use the 'touch' command to create a file with the file name follwing the command.
+
+Use the 'rm' and'rmdir' command to permanently delete a file or empty directories, respectively.
