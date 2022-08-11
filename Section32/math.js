@@ -7,3 +7,5 @@ const square = (x) => {
 };
 
 const PI = 3.141592653589792328;
+
+exports = {add, square, PI}

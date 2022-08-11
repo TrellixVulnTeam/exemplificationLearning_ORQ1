@@ -9,3 +9,7 @@ If one requires an entire directory, that export value will be the 'index.js' fi
 NPM is a library of packages for devs to use and a command line tool to access and manage those packages. 
 
 use the '-g' flag to install a package globally.
+
+'package.json' is a file present in every node package containing metadata about the project (dependencies, autors, licenses, etc.).
+
+Use 'npm init' to create a 'package.json'
