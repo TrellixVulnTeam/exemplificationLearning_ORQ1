@@ -1,0 +1,15 @@
+Node.js is a JS runtime that allows one to execute code outside of the browser. With Node, we can write back-end and server-side code with JS.
+
+One can also build command line tools, video games, and native applications with Node.
+
+The JS console is one's browser is a REPL. One can type code in, and it will Read, Evalulate, Print something, and Loop it. REPLs are continual programs; until one types something in, they continually wait for input.
+
+The Node REPL is similar to the web browser REPL, except with additional features, such as built-in modules. However, one does not have access to DOM APIs and windows and documents when using Node. 
+
+The global scope in Node is accessed using an object called 'global'.
+
+Use the 'node [fileName]' command to run a JS file in the Node REPL.
+
+'process' is an object residing in the global scope that provides info about, and control over, the current Node.js process.
+
+'process.argv' returns 'process.execPath'm command line arguments passed when the Node.js process was launched, and the absolute path to the JS file being executed.
