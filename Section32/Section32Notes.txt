@@ -1,0 +1,11 @@
+Node.js follows the CommonJS module system, and the builtin require function is the easiest way to include modules that exist in separate files. 
+
+The basic functionality of require is that it reads a JavaScript file, executes the file, and then proceeds to return the exports object.
+
+By default an imported file returns an export value of {}. One can change this by assigning a value to module.exports. 
+
+If one requires an entire directory, that export value will be the 'index.js' file in that directory. 
+
+NPM is a library of packages for devs to use and a command line tool to access and manage those packages. 
+
+use the '-g' flag to install a package globally.
