@@ -7,4 +7,8 @@ Express applications require a port on which they listen to inputs.
 
 'localhost' is a reference to one's current machine, and the number follwing it and a colon is an address to indentify the server.
 
-app.use() defines code that will be exeucted when an Express server gets a request.
+app.use() defines code that will be exeucted when an Express server gets a request. This function accepts one parameter (a callback containing parameters of a request object and response object).
+
+One cannot have an HTTP request that gets more than one response.
+
+app.get() defines code that will be executed when an Express server gets a request a specific route ("/route").
