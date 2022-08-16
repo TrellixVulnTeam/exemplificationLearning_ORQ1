@@ -1,0 +1,6 @@
+Templating allows one to define a preset "pattern" for a webpage that can be dynamically modified. 
+
+res.render() allows one to render a template page as a repsonse to a HTTP request.
+Use path to make sure that the /views folder accesses is static and isn't changing as one moves to various directories. 
+
+Various tags exist in EJS to inform the compiler that some code is not HTML.
