@@ -1,0 +1,10 @@
+Express is a web framework for Node.js. It helps developers initiate servers to listen for requests, parse incoming requests, match requests to particular routes, and craft one's HTTP response and associated content. 
+
+When one uses a library, they are in charge; they control the flow of the application code, and they decide when to use the library. 
+With frameworks, that control is inverted. The framework controls the application, one writes their code according to the syntax of the framework.
+
+Express applications require a port on which they listen to inputs. 
+
+'localhost' is a reference to one's current machine, and the number follwing it and a colon is an address to indentify the server.
+
+app.use() defines code that will be exeucted when an Express server gets a request.
