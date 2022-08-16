@@ -1,6 +1,20 @@
 Templating allows one to define a preset "pattern" for a webpage that can be dynamically modified. 
 
 res.render() allows one to render a template page as a repsonse to a HTTP request.
-Use path to make sure that the /views folder accesses is static and isn't changing as one moves to various directories. 
+Use path to make sure that the /views and /public folder accesses is static and isn't changing as one moves to various directories. 
 
 Various tags exist in EJS to inform the compiler that some code is not HTML.
+
+One can pass data from a JS file (or from a database) to a EJS file using object parameters.
+app.get("/rand", (req, res) => {
+    const num = Math.floor(Math.random() * 10) + 1;
+    res.render("random", {rand: num});
+});
+
+<h1>Rnadom number: <%= rand %></h1>
+
+Make sure not to use the equals sign in an EJS tag when including conditionals in a tag.
+
+Use app.use(express.static(path.join(__dirname, "public"))) to delcare an absolute location for static objects (CSS stylesheets, images, Bootstrap JS, etc.).
+
+Use <%- include("partials/head.ejs") %> to link the contents of a header/navbar/footer/any element to a template header/navbar/footer/any element. 
