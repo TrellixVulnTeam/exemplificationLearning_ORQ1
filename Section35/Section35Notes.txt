@@ -1,0 +1,19 @@
+The get request is used to retrieve information from server sent in a query string. This information is visble in the corresponding URL, and a limited amount of data can be sent.
+The post request is used to post data to the server; it is utilized to write/create/update data and it is sent using a request body through JSON.
+
+req.body (which is only avaibale with post requests) can contain key-value pairs of data sumbitted in the request body. By default, this field is undefined.
+
+app.use() is a method that runs a callback whenever any request is created. 
+Use app.use(express.json()) to parse JSON data to JS objects and app.use(express.urlencoded({extended: true})) to parse form data to JS objects.
+
+REST stands for representational state transfe; it's a set of guidelines for how a client + server should communicate and perform CRUD operations on a given resource.
+
+The main idea of REST is treating data on the server-side as resources that can be CRUDed. 
+Use res.redirect() to redirect a user to another webpage.
+
+A universally unique identifier is a 128-bit label used for information in computer systems.
+
+One can destructure library local names when using the require().
+
+The PATCH HTTP request is use to apply partial modifications to a resource.
+
