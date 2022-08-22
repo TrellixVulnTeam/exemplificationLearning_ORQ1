@@ -17,3 +17,8 @@ One can destructure library local names when using the require().
 
 The PATCH HTTP request is use to apply partial modifications to a resource.
 
+The find() method returns the first element in the provided array that satisfies the provided testing function.
+
+Forms in one's browser can only send get and post requests. However, the NPM package method-override breaches this default functionality. 
+One can override utilizing the header or a query. 
+
