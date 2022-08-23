@@ -1,0 +1,35 @@
+MongoDB is the most popular dev-end database in the world. Databases can handle large amounts of data efficiently, store it compactly, access it effieciently, and offer general security methods to secure data. 
+Databases also generally scale well.
+
+Structured Query Language (SQL) databases are relational databases, meaning one must pre-define a schema of tbales before they insert anything.
+Non-SQL databases do not use SQL; there are many types of non-SQL databases, including document, key-value, and grph databses. 
+
+MongoDB is a document-oriented database, meaning they store documents that store data in some format. 
+
+Mongo is commonly used with Node and Express, works particularly well with JS, and as a result, a strong Mongo dev community is present.
+
+Use the use command in mongosh to use a certain database. Use the show command to show the status of the database one is currently using. 
+
+BSON is binary JSON. Mongo stored JSON objects as BSON.
+
+Collections in MongoDB are groups of documents. 
+
+Use db.collection.insertOne(), db.collection.insertMany(), and db.collection.insert() to insert documents into a collections.
+
+_id is an identification string created by default by MongoDB.
+
+Use db.collection.find({key: value}) to find all documents in a collection with value 'value' of key 'key'.
+
+Use db.collection.updateOne({key: value}, {$set: {key1: value1}}) to set 'key1' to 'value1' for the first object with 'value' assigned to 'key'.
+
+Use db.collection.updateMany({key: value}, {$set: {key1: value1}}) to set 'key1' to 'value1' for all objects with 'value' assigned to 'key'. One can also set newly created keys using this. 
+
+Use db.collection.updateOne({key: value}, {$set: {key1: value1}, $currentDate: {lastChange: true}}) to set lastChanged of a certain object to the current date.
+
+Use db.collection.deleteOne({key: value}) to delete the first object where 'key' is set to 'value'.
+
+Use db.collection.deleteMany({key: value}) to delete all objects where 'key' is set to 'value'.
+
+Use db.collection.deleteMany({}) to delete all objects.
+
+Dollar sign operators allow one to define more specific arguments when CRUDing.
