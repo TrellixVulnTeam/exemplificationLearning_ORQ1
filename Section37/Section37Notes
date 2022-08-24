@@ -1,0 +1,27 @@
+ODMs like Mongoose map documents coming from a database into usable JS objects. Mongoose allows one to map out application data and define a schema.
+
+Models are JS classes that one makes with the assistance of Mongoose that represent info in a Mongo DB. 
+Everything in Mongoose starts with a schema, or a mapping of different keys in Mongo to distinct types in JS.
+
+One can create a model by using mongoose.model(singular name of collection, schema).
+
+Set variable.property in the node CLI then type variable.save() to save that change in the corresponding Mongo DB. 
+
+Use modelName.insertMany[array of objects utilizing the schema] to add many objects to a collection. (this method returns a promise, that, when resolved, returns the inserted data)
+
+Find methods work the same as in the CLI, but they return a thennable Mongoose query. However .findById() also exists. 
+
+Use exec() to return an actual Promise rather than a regular thennable object. 
+
+model.updateOne(), model.update() and model.updateMany() are used to update the properties of a single object and multiple objects, respectively. 
+
+model.findOneAndUpdate() are used to update the properties of a single object and return the old object as a Mongoose query afterwards. Make sure to pass in {returnOriginal:false} if you need to new object to be returned. 
+
+model.findOneAndRemove(), model.findByIdAndRemove(), and model.remove() all remove objects from a collection and return "deletion confirmation".
+model.findOneAndDelete(), model.findByIdAndDelete(), and model.delete() all remove objects from a collection and return the deleted object.
+
+Use required: true in a schema to require that a certain field be assigned a value of its corresponding type.
+
+Schemas will not throw an error if an additional field outside the lines of the Schema is defined and assigned.
+
+use default: in a schema to set a default value for a field.
