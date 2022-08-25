@@ -56,6 +56,14 @@ conciseSchema.virtual('concise').get(function() {
 
 const ConciseProduct = mongoose.model("ConciseProduct", conciseSchema);
 
+conciseSchema.pre('save', async function() {
+    console.log("about to save...");
+});
+
+conciseSchema.post('save', async function() {
+    console.log("saved");
+});
+
 const Product = new mongoose.model("Product", productSchema);
 
 productSchema.statics.fireSale = function() {
